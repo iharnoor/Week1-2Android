@@ -5,6 +5,11 @@ object Driver {
     @JvmStatic
     fun main(args: Array<String>) {
 
+        // todo showing the idea of getters & setters how they implement clean code
+
+        // Object should be able to do a dot operation to get all the data
+
+
 
         // challenge -> figure out a way to print salaries of each employee based on
         //  1. Contractor

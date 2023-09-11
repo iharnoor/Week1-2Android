@@ -6,6 +6,7 @@ public class Story1 {
 
 
     // this part makes code very difficult to understand due to if statements
+    //Todo cover concepts of Switch here
     public static void printEmployeeSalary(Employee employee){
         if (employee.employeeType.equals("Contractor")) {
             System.out.println("Contractor Salary: $100,000");
