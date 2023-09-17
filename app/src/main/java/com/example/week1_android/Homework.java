@@ -5,3 +5,66 @@ package com.example.week1_android;
 // to calculate the area of Square, Rectangle and Triangle
 public class Homework {
 }
+
+class Shape {
+    double side;
+    double length;
+    double breadth;
+
+    Shape(double side) {
+        this.side = side;
+    }
+
+    Shape(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public String toString() {
+        return "Area of ";
+    }
+}
+
+class Square extends Shape {
+    Square(double side) {
+        super(side);
+    }
+
+    public double calculateArea() {
+        return (super.side * super.side);
+    }
+
+    public String toString() {
+        return super.toString() + "Square : " + calculateArea();
+    }
+}
+
+class Rectangle extends Shape {
+    Rectangle(double length, double breadth) {
+        super(length, breadth);
+    }
+
+    public double calculatedArea() {
+        double areaOfRectangle = super.length * super.breadth;
+        return areaOfRectangle;
+    }
+
+    public String toString() {
+        return super.toString() + "Rectangle : " + calculatedArea();
+    }
+}
+
+class Triangle extends Shape {
+    Triangle(double base, double height) {
+        super(base, height);
+    }
+
+    public double calculatedArea() {
+        double areaOfTriangle = 0.5 * super.length * super.breadth;
+        return areaOfTriangle;
+    }
+
+    public String toString() {
+        return super.toString() + "Triangle : " + calculatedArea();
+    }
+}
