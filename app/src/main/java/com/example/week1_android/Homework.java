@@ -7,30 +7,36 @@ public class Homework {
 }
 
 class Shape {
-    double side;
-    double length;
-    double breadth;
+    double side; // square
+    double length; // rectangel
+    double breadth; // rectangle
 
     Shape(double side) {
+        System.out.println("constructor of Shape(side)");
         this.side = side;
-    }
+    } // square needs one feature to calculate ares
 
-    Shape(double length, double breadth) {
+    Shape(double length, double breadth) { //2 fearues length and breadth
+        System.out.println("constructor of Shape(l,b");
+
         this.length = length;
         this.breadth = breadth;
     }
 
     public String toString() {
+        System.out.println("toString of Shape");
         return "Area of ";
     }
 }
 
 class Square extends Shape {
-    Square(double side) {
+    Square(double side) { // 1 parameter one field to calulate
         super(side);
+        System.out.println("constructor of Shape(l,b");
     }
 
     public double calculateArea() {
+        System.out.println("calculateArea of Squre(side)");
         return (super.side * super.side);
     }
 
@@ -40,7 +46,7 @@ class Square extends Shape {
 }
 
 class Rectangle extends Shape {
-    Rectangle(double length, double breadth) {
+    Rectangle(double length, double breadth) { // lenght and breadth
         super(length, breadth);
     }
 
